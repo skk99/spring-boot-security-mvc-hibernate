@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" th:href="@{/styles.css}">
+    <script type="text/javascript" th:src="@{script.js}"></script>
+</head>
+<body>
+
+    <h2>Shankar Software Solutions</h2>
+    <h3>Student Registration Form</h3>
+
+    <form name="regForm" method="post" action="#" th:action="@{/reg}" th:object="${student}" onsubmit="return validateForm()">
+        <table>
+            <tr>
+                <td>Student Id</td>
+                <td><input type="text" th:field="*{sid}"></td>
+            </tr>
+            <tr>
+                <td>Student Name</td>
+                <td><input type="text" th:field="*{sname}"></td>
+            </tr>
+            <tr>
+                <td>Student Email Id</td>
+                <td><input type="text" th:field="*{semail}"></td>
+            </tr>
+            <tr>
+                <td>Student Mobile No</td>
+                <td><input type="text" th:field="*{smobile}"></td>
+            </tr>
+            <tr>
+                <td>Student Address</td>
+                <td><input type="text" th:field="*{saddr}"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Register"></td>
+            </tr>
+        </table>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+employee:
+  eno: 111
+  ename: Durga
+  esal: 50000
+  eaddr: Hyd
+
+
+student:
+  sid: S-111
+  sname: Durga
+  semail: durga@durgasoft.com
+  smobile: 91-9988776655
+
+
+customer:
+  cid: C-111
+  cname: Durga
+  cemail: durga@dss.com
+  caddr: Hyd
+
+user:
+  qual:
+    - BTECH
+    - MTECH
+    - PDH
+
+message: Hello User, This is from application.yml
