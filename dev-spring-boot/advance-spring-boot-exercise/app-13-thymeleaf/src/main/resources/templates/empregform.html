@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Registration Form</title>
+</head>
+<body>
+
+    <form method="post" action="#" th:action="@{/emp/reg}" th:object="${employee}">
+        <table align="center">
+            <tr>
+                <td>Employee Number</td>
+                <td><input type="text" th:field="*{eno}"></td>
+            </tr>
+            <tr>
+                <td>Employee Name</td>
+                <td><input type="text" th:field="*{ename}"></td>
+            </tr>
+            <tr>
+                <td>Employee Salary</td>
+                <td><input type="text" th:field="*{esal}"></td>
+            </tr>
+            <tr>
+                <td>Employee Address</td>
+                <td><input type="text" th:field="*{eaddr}"></td>
+            </tr>
+            <br>
+            <tr>
+                <td><input type="submit" value="Register"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

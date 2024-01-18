@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Registration Details</title>
+</head>
+<body>
+
+    <table align="center">
+        <tr>
+            <td>Employee Number</td>
+            <td th:text="${employee.eno}">
+        </tr>
+        <tr>
+            <td>Employee Name</td>
+            <td th:text="${employee.ename}">
+        </tr>
+        <tr>
+            <td>Employee Salary</td>
+            <td th:text="${employee.esal}">
+        </tr>
+        <tr>
+            <td>Employee Address</td>
+            <td th:text="${employee.eaddr}">
+        </tr>
+    </table>
+
+</body>
+</html>
